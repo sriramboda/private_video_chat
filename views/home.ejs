@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Private Video Chat</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <style>
+      body{
+        background-color: rgb(218, 217, 217);
+        /* color:rgb(96, 70, 70); */
+        /* background: rgb(43, 41, 41); */
+        /* background-color: rgb(219, 79, 79); */
+        padding:10px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .share{
+        color: black;
+        margin-top: 40px;
+      }
+      .inputid{
+        display: flex;
+      }
+      input{
+        height: 40px;
+        width: 350px;
+        font-size: 16px;
+      }
+      button{
+        color:rgb(17, 22, 21);
+        background: rgb(255, 255, 255);
+        margin-top: 3%;
+        
+        
+        height: 45px;
+        width: 200px;
+        font-size: 25px;
+
+      }
+      button:hover{
+        background-color: rgb(27, 191, 191);
+       
+      }
+      img{
+        
+        height: 250px;
+        border: 20%;
+        padding-left: 10px;
+      }
+   </style>
+</head>
+<body>
+
+   <center>
+    <img src="https://media.istockphoto.com/vectors/video-call-icon-logo-vector-illustration-video-call-icon-design-vector-id1219543680?k=20&m=1219543680&s=612x612&w=0&h=EOCyQfO2j11jmsq_9lSZRvm97RV18tCnL55ykDdLY68=" alt="video chat">
+
+    <h1 class="share">HELLO GUEST</h1>
+    <h1 class="share">Welcome to Private Video Chat</h1>
+    <h2 class="share">Join the chat by using this MEETING ID: <%= meetId %></h2>
+    <form class="inpputid" id="meet_form" >
+        <h2 class="share">Join this Chat by entering ID: </h2>
+        <input required type="text" name='meetid' placeholder="Enter the Meeting id here..."/>
+        <button type="submit" >Join</button>
+    </form>
+   </center>
+
+<script type="text/javascript">
+    const form = document.getElementById('meet_form');
+    form.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      const id = e.target.meetid.value.trim();
+      console.log('clicked')
+      document.location = `http://localhost:8000/${id}`;
+    })
+ </script>
+
+</body>
+</html>
