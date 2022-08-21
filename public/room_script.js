@@ -1,6 +1,6 @@
 
 const disconnect = ()=>{
-  document.location= `https://colleague-meet-backend.herokuapp.com/`
+  document.location= `https://privatevideochatbackend.herokuapp.com/`
 }
 
 const connectToNewUser= (userId, myStream)=> {
