@@ -5,3 +5,7 @@ In this app we can Start a meeting or Join a meeting using shared meeting ID and
 Some features addede were Chat feature, Audio/Video on/off , anonymous chat and also Meeting chat for a particular meeting id is stored in local storage for recovery in case of network failure
 
 ![alt text](https://github.com/sriramboda/private_video_chat/blob/main/Screenshot%20(213).png?raw=true)
+![alt text](https://github.com/sriramboda/private_video_chat/blob/main/Screenshot%20(214).png?raw=true)
+![alt text](https://github.com/sriramboda/private_video_chat/blob/main/Screenshot%20(215).png?raw=true)
+![alt text](https://github.com/sriramboda/private_video_chat/blob/main/Screenshot%20(216).png?raw=true)
+![alt text](https://github.com/sriramboda/private_video_chat/blob/main/Screenshot%20(217).png?raw=true)
